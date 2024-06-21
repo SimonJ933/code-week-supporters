@@ -1,5 +1,7 @@
 const statisticsContainer = document.querySelector(".statistics-container");
 
+// FUNZIONE PER STAMPARE LE STATISTICHE IN DOM
+
 const statAnalisis = (team, juveLenght, milanLenght, napoliLenght, romaLenght, lazioLenght, interLenght) => {
   const statDiv = document.createElement("div");
   const teamImg = document.createElement("img");
@@ -12,22 +14,22 @@ const statAnalisis = (team, juveLenght, milanLenght, napoliLenght, romaLenght, l
 
   switch (team.name) {
     case "Juventus":
-      teamVote.textContent = `% voti : ${juveLenght}`;
+      teamVote.textContent = `% Voti utenti : ${juveLenght}`;
       break;
     case "Milan":
-      teamVote.textContent = `% voti : ${milanLenght}`;
+      teamVote.textContent = `% Voti utenti : ${milanLenght}`;
       break;
     case "Inter":
-      teamVote.textContent = `% voti : ${interLenght}`;
+      teamVote.textContent = `% Voti utenti : ${interLenght}`;
       break;
     case "Napoli":
-      teamVote.textContent = `% voti : ${napoliLenght}`;
+      teamVote.textContent = `% Voti utenti : ${napoliLenght}`;
       break;
     case "Roma":
-      teamVote.textContent = `% voti : ${romaLenght}`;
+      teamVote.textContent = `% Voti utenti : ${romaLenght}`;
       break;
     case "Lazio":
-      teamVote.textContent = `% voti : ${lazioLenght}`;
+      teamVote.textContent = `% Voti utenti : ${lazioLenght}`;
       break;
   }
 

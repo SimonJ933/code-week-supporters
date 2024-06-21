@@ -1,5 +1,7 @@
 const userContainer = document.querySelector(".user-container");
 
+// FUNZIONE PER STAMPARE LE CARD IN DOM
+
 const renderCard = (user) => {
   const cardDiv = document.createElement("div");
   const cardName = document.createElement("h3");

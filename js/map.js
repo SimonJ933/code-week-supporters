@@ -1,5 +1,7 @@
 import { teams } from "./teams.js";
 
+// FUNZIONE PER PATCHARE LA NOSTRA LISTA UTENTI E RANDOMIZZARE LA SQUADRA ASSEGNATA
+
 const updateResponse = async (data) => {
   const users = await data;
 

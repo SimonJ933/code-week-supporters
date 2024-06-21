@@ -49,6 +49,8 @@ teams.forEach((team) => {
   statAnalisis(team, juveLenght, milanLenght, napoliLenght, romaLenght, lazioLenght, interLenght);
 });
 
+//  PROVA PER VEDERE SE FUNZIONA IL PATCH PER UN SINGOLO UTENTE
+
 // const PATCH = fetch(`https://jsonplaceholder.typicode.com/users/2`, {
 //   method: "PATCH",
 //   body: JSON.stringify({
@@ -63,7 +65,8 @@ teams.forEach((team) => {
 
 // console.log(teams);
 
-// ASSEGNIAMO UNA SQUADRA RANDOM AD OGNI UTENTE E STAMPIAMO IN DOM
+// METODO ALTERNATIVO PER PATCHARE E RANDOMIZZARE LE SQUADRE ASSEGNATE
+
 // const assignRandomTeams = async () => {
 //   const updateUser = [];
 //   try {
