@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  padding: 0;
+}
+body {
+  background-color: rgb(19, 21, 29);
+  background-image: url(./img/soccersitebackground.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  background-color: rgb(33, 31, 54);
+}
+
+.title-container span {
+  font-family: Graduate;
+  color: green;
+}
+
+.user-container {
+  display: grid;
+  grid-column: auto;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+  justify-items: center;
+  font-family: "Roboto", sans-serif;
+}
+h2 {
+  margin-top: 50px;
+  text-align: center;
+}
+.user-card {
+  margin-top: 20px;
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  object-fit: contain;
+  padding: 5px 5px;
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px;
+  transition: 0.5s;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.user-card:hover {
+  transform: scale(1.05, 1.05);
+}
+.user-card img {
+  object-fit: contain;
+  margin-top: 10px;
+}
+.statistics-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.stat-grid {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px,
+    rgba(240, 46, 170, 0.05) 0px 25px;
+  margin: 0 auto;
+  background-color: rgb(33, 31, 54);
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.stat-grid img {
+  margin-top: 40px;
+}
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  display: flex;
+  justify-content: center;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 1px;
+  text-align: justify;
+}
+th {
+  background-color: rgb(33, 31, 54);
+}
+
+@media (min-width: 768px) {
+  .user-container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .user-card {
+    margin-top: 50px;
+    width: 250px;
+    height: 250px;
+    text-align: left;
+    gap: 10px;
+    flex-wrap: nowrap;
+    object-fit: contain;
+  }
+}
+th,
+td {
+  border: 1px solid black;
+  padding: 4px 4px;
+  text-align: justify;
+}
+.stat-grid img {
+  margin-top: 30px;
+}
